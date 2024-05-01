@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <RootNamespace>DotNetPlayground.Api</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="Keycloak.AuthServices.Authentication" Version="1.6.0" />
+        <PackageReference Include="Keycloak.AuthServices.Authorization" Version="1.6.0" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\DotNetPlayground\DotNetPlayground.Application\DotNetPlayground.Application.Student\DotNetPlayground.Application.Student.csproj" />
+      <ProjectReference Include="..\DotNetPlayground.Api.Application\DotNetPlayground.Api.Application.csproj" />
+      <ProjectReference Include="..\DotNetPlayground.Api.EntityFrameworkCore\DotNetPlayground.Api.EntityFrameworkCore.csproj" />
+      <ProjectReference Include="..\DotNetPlayground.Api.Http\DotNetPlayground.Api.Http.csproj" />
+    </ItemGroup>
+
+</Project>

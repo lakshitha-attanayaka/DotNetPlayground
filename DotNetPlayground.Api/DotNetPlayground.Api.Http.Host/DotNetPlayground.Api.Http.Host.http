@@ -1,0 +1,6 @@
+@DotNetPlayground.Api.Http.Host_HostAddress = http://localhost:5267
+
+GET {{DotNetPlayground.Api.Http.Host_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

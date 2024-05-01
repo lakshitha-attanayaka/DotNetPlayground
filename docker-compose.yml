@@ -1,0 +1,6 @@
+﻿services:
+  dotnetplayground.api.http.host:
+    image: dotnetplayground.api.http.host
+    build:
+      context: .
+      dockerfile: DotNetPlayground.Api/DotNetPlayground.Api.Http.Host/Dockerfile
