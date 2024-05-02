@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <AzureFunctionsVersion>V4</AzureFunctionsVersion>
+        <OutputType>Exe</OutputType>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.19.0"/>
+        <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.1.0" />
+        <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.15.1"/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="host.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext"/>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\DotNetPlayground\DotNetPlayground.Application\DotNetPlayground.Application.Student\DotNetPlayground.Application.Student.csproj" />
+      <ProjectReference Include="..\DotNetPlayground.Function.Student.Application\DotNetPlayground.Function.Student.Application.csproj" />
+      <ProjectReference Include="..\DotNetPlayground.Function.Student.Data\DotNetPlayground.Function.Student.Data.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="local.settings.json" />
+      <Content Include="local.settings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+</Project>

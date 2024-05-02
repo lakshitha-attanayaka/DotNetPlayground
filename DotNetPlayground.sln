@@ -28,7 +28,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPlayground.SqlServer.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPlayground.SqlServer.DbMigrator", "DotNetPlayground\DotNetPlayground.SqlServer\DotNetPlayground.SqlServer.DbMigrator\DotNetPlayground.SqlServer.DbMigrator.csproj", "{3951C1AA-A09C-4714-BA39-F181431C890C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPlayground.Api.EntityFrameworkCore", "DotNetPlayground.Api\DotNetPlayground.Api.EntityFrameworkCore\DotNetPlayground.Api.EntityFrameworkCore.csproj", "{5CF516E6-83B1-49AE-9B76-A52F64F87F6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPlayground.Api.Data", "DotNetPlayground.Api\DotNetPlayground.Api.Data\DotNetPlayground.Api.Data.csproj", "{5CF516E6-83B1-49AE-9B76-A52F64F87F6A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPlayground.Api.Application", "DotNetPlayground.Api\DotNetPlayground.Api.Application\DotNetPlayground.Api.Application.csproj", "{BC72C26C-678F-49E5-9D0D-A3577499AACD}"
 EndProject
@@ -40,6 +40,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNetPlayground.Function.Student", "DotNetPlayground.Function.Student", "{6A7394A5-FD2C-4CA0-8E8B-EFC4ED2C4147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPlayground.Function.Student", "DotNetPlayground.Function\DotNetPlayground.Function.Student\DotNetPlayground.Function.Student\DotNetPlayground.Function.Student.csproj", "{68FE50D7-5894-4C03-9D5C-0F6650D51208}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPlayground.Function.Student.Application", "DotNetPlayground.Function\DotNetPlayground.Function.Student\DotNetPlayground.Function.Student.Application\DotNetPlayground.Function.Student.Application.csproj", "{94449832-75D6-44DF-B68D-0E197AA7FE92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetPlayground.Function.Student.Data", "DotNetPlayground.Function\DotNetPlayground.Function.Student\DotNetPlayground.Function.Student.Data\DotNetPlayground.Function.Student.Data.csproj", "{651F1FAD-7DB0-4DDE-B0A6-6B060F98CE0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +69,10 @@ Global
 		{BC72C26C-678F-49E5-9D0D-A3577499AACD} = {9520F783-9D94-4648-951B-70D221C121B1}
 		{4C566A50-E6AC-498E-A200-E9364D14E275} = {9520F783-9D94-4648-951B-70D221C121B1}
 		{A4883827-7699-4AA5-8075-88C0E1F95860} = {9520F783-9D94-4648-951B-70D221C121B1}
+		{6A7394A5-FD2C-4CA0-8E8B-EFC4ED2C4147} = {A019FD20-D2BE-414E-9CD7-5891A75ED52A}
+		{68FE50D7-5894-4C03-9D5C-0F6650D51208} = {6A7394A5-FD2C-4CA0-8E8B-EFC4ED2C4147}
+		{94449832-75D6-44DF-B68D-0E197AA7FE92} = {6A7394A5-FD2C-4CA0-8E8B-EFC4ED2C4147}
+		{651F1FAD-7DB0-4DDE-B0A6-6B060F98CE0C} = {6A7394A5-FD2C-4CA0-8E8B-EFC4ED2C4147}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C8648140-FE14-453F-92D4-28ACF7BA73FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -107,5 +119,17 @@ Global
 		{A4883827-7699-4AA5-8075-88C0E1F95860}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4883827-7699-4AA5-8075-88C0E1F95860}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4883827-7699-4AA5-8075-88C0E1F95860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68FE50D7-5894-4C03-9D5C-0F6650D51208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68FE50D7-5894-4C03-9D5C-0F6650D51208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68FE50D7-5894-4C03-9D5C-0F6650D51208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68FE50D7-5894-4C03-9D5C-0F6650D51208}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94449832-75D6-44DF-B68D-0E197AA7FE92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94449832-75D6-44DF-B68D-0E197AA7FE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94449832-75D6-44DF-B68D-0E197AA7FE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94449832-75D6-44DF-B68D-0E197AA7FE92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{651F1FAD-7DB0-4DDE-B0A6-6B060F98CE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{651F1FAD-7DB0-4DDE-B0A6-6B060F98CE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{651F1FAD-7DB0-4DDE-B0A6-6B060F98CE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{651F1FAD-7DB0-4DDE-B0A6-6B060F98CE0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>DotNetPlayground.Function.Student</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\DotNetPlayground\DotNetPlayground.Application\DotNetPlayground.Application.Student\DotNetPlayground.Application.Student.csproj" />
+    </ItemGroup>
+
+</Project>

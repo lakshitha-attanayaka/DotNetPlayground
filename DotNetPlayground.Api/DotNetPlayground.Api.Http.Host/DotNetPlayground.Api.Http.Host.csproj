@@ -26,7 +26,7 @@
     <ItemGroup>
       <ProjectReference Include="..\..\DotNetPlayground\DotNetPlayground.Application\DotNetPlayground.Application.Student\DotNetPlayground.Application.Student.csproj" />
       <ProjectReference Include="..\DotNetPlayground.Api.Application\DotNetPlayground.Api.Application.csproj" />
-      <ProjectReference Include="..\DotNetPlayground.Api.EntityFrameworkCore\DotNetPlayground.Api.EntityFrameworkCore.csproj" />
+      <ProjectReference Include="..\DotNetPlayground.Api.Data\DotNetPlayground.Api.Data.csproj" />
       <ProjectReference Include="..\DotNetPlayground.Api.Http\DotNetPlayground.Api.Http.csproj" />
     </ItemGroup>
 

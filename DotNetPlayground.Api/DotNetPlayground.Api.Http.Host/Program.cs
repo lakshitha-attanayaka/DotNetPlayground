@@ -91,7 +91,7 @@ public class Program
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
+        if(bool.TryParse(builder.Configuration["App:EnableSwagger"] ?? "false", out var enableSwagger) && enableSwagger)
         {
             app.UseSwagger();
             app.UseSwaggerUI();
